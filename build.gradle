@@ -67,10 +67,6 @@ sourceSets {
 	}
 }
 
-compileQuerydsl{
-	options.annotationProcessorPath = configurations.querydsl
-}
-
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -78,3 +74,6 @@ configurations {
 	querydsl.extendsFrom compileClasspath
 }
 
+tasks.withType(JavaCompile).configureEach {
+	options.encoding = "UTF-8"
+}
