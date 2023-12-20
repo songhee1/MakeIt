@@ -1,9 +1,7 @@
 spring:
   datasource:
-#    url: jdbc:h2:tcp://localhost/~/jpashopp
-    url : freelec-springboot2-webservice.czo4oougy87g.ap-northeast-2.rds.amazonaws.com:3306/freelec_springboot2_webservice?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-#    username: sa
-    username : song
+    url: jdbc:h2:tcp://localhost/~/jpashopp
+    username: sa
     password: thd02026
     driver-class-name: org.h2.Driver
 
